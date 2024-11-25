@@ -53,7 +53,8 @@ Output Passage A or Passage B:"""
                                                          if tokenizer_name_or_path is not None else
                                                          model_name_or_path, cache_dir=cache_dir)
             self.llm = T5ForConditionalGeneration.from_pretrained(model_name_or_path,
-                                                                  device_map='auto',
+                                                                #   device_map='auto',
+                                                                  device_map={"": device},
                                                                   torch_dtype=torch.float16 if device == 'cuda'
                                                                   else torch.float32,
                                                                   cache_dir=cache_dir)
@@ -70,7 +71,8 @@ Output Passage A or Passage B:"""
             self.tokenizer.pad_token = "[PAD]"
             self.tokenizer.padding_side = "left"
             self.llm = AutoModelForCausalLM.from_pretrained(model_name_or_path,
-                                                            device_map='auto',
+                                                            # device_map='auto',
+                                                            device_map={"": device},
                                                             torch_dtype=torch.float16 if device == 'cuda'
                                                             else torch.float32,
                                                             cache_dir=cache_dir).eval()

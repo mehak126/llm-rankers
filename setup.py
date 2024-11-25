@@ -7,7 +7,7 @@ setup(
     name='llm-rankers',
     version='0.0.2',
     packages=find_packages(),
-    url='https://github.com/ielab/llm-rankers',
+    url='https://github.com/mehak126/llm-rankers',
     license='Apache 2.0',
     author='Shengyao Zhuang',
     author_email='s.zhuang@uq.edu.au',

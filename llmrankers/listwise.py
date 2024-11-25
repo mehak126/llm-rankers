@@ -219,7 +219,8 @@ class ListwiseLlmRanker(OpenAiListwiseLlmRanker):
                                                          if tokenizer_name_or_path is not None else
                                                          model_name_or_path, cache_dir=cache_dir)
             self.llm = T5ForConditionalGeneration.from_pretrained(model_name_or_path,
-                                                                  device_map='auto',
+                                                                #   device_map='auto',
+                                                                  device_map={"": device},
                                                                   torch_dtype=torch.float16 if device == 'cuda'
                                                                   else torch.float32,
                                                                   cache_dir=cache_dir)
@@ -239,7 +240,8 @@ class ListwiseLlmRanker(OpenAiListwiseLlmRanker):
                 self.tokenizer.chat_template = "{% if messages[0]['role'] == 'system' %}{% set loop_messages = messages[1:] %}{% set system_message = messages[0]['content'] %}{% else %}{% set loop_messages = messages %}{% set system_message = 'A chat between a curious user and an artificial intelligence assistant. The assistant gives helpful, detailed, and polite answers to the user\\'s questions.' %}{% endif %}{% for message in loop_messages %}{% if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}{{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}{% endif %}{% if loop.index0 == 0 %}{{ system_message }}{% endif %}{% if message['role'] == 'user' %}{{ ' USER: ' + message['content'].strip() }}{% elif message['role'] == 'assistant' %}{{ ' ASSISTANT: ' + message['content'].strip() + eos_token }}{% endif %}{% endfor %}{% if add_generation_prompt %}{{ ' ASSISTANT:' }}{% endif %}"
 
             self.llm = AutoModelForCausalLM.from_pretrained(model_name_or_path,
-                                                            device_map='auto',
+                                                            # device_map='auto',
+                                                            device_map={"": device},
                                                             torch_dtype=torch.float16 if device == 'cuda'
                                                             else torch.float32,
                                                             cache_dir=cache_dir).eval()

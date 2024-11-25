@@ -18,7 +18,8 @@ class PointwiseLlmRanker(LlmRanker):
         self.config = AutoConfig.from_pretrained(model_name_or_path, cache_dir=cache_dir)
         if self.config.model_type == 't5':
             self.llm = T5ForConditionalGeneration.from_pretrained(model_name_or_path,
-                                                                  device_map='auto',
+                                                                #   device_map='auto',
+                                                                  device_map={"": device},
                                                                   torch_dtype=torch.float16 if device == 'cuda'
                                                                   else torch.float32,
                                                                   cache_dir=cache_dir)
