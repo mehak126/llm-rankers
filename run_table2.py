@@ -1,3 +1,7 @@
+"""
+Script for running the experiments needed to generate the results in Table 2.
+"""
+
 import os
 import subprocess
 
