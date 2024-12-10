@@ -1,27 +1,22 @@
-"""
-Script for running the experiments needed to generate the results in Table 2.
-"""
-
 import os
 import subprocess
 
-# model_names = ["meta-llama/Llama-3.1-8B", "meta-llama/Llama-3.1-8B-Instruct"]
-# model_names = ["unsloth/Meta-Llama-3.1-8B", "unsloth/Meta-Llama-3.1-8B-Instruct"]
-# model_names = ["meta-llama/Llama-2-7b-hf"]
-# model_names = ["lmsys/vicuna-7b-v1.5"]
-# model_names = ["meta-llama/Llama-2-7b-chat-hf"]
-# model_names = ["meta-llama/Llama-2-7b-hf"]
-# model_names = ["lmsys/vicuna-13b-v1.5"]
-# model_names = ["lmsys/vicuna-13b-v1.5"]
-model_names = ["lmsys/vicuna-13b-v1.5"]
+model_names = [
+    "meta-llama/Llama-3.1-8B",
+    "meta-llama/Llama-3.1-8B-Instruct",
+    "meta-llama/Llama-2-7b-hf",
+    "lmsys/vicuna-7b-v1.5",
+    "lmsys/vicuna-13b-v1.5",
+    "lmsys/vicuna-13b-v1.5",
+]
 ranking_method_names = ["setwise", "listwise", "pairwise"]
 sorting_method_names = {
-    "pairwise": ["heapsort", "bubblesort"],  # , "allpair"],
+    "pairwise": ["heapsort", "bubblesort"],
     "setwise": ["heapsort", "bubblesort"],
     "pointwise": ["yes_no", "qlm"],
-    "listwise": ["likelihood"],  # , "generation"],
+    "listwise": ["likelihood", "generation"],
 }
-dataset_names = ["dl19"]  # , "dl20"]
+dataset_names = ["dl19", "dl20"]
 save_dir = "output_files/table4"
 device = 0  # cuda device
 
@@ -101,4 +96,3 @@ for dataset_name in dataset_names:
                     )
                     if process.returncode != 0:
                         print(f"Command failed with return code {process.returncode}")
-print(f"FIN.")

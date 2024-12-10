@@ -1,5 +1,6 @@
 """
-Script for running the experiments needed to generate the results in Table 2.
+Script for running the experiments needed to generate the results in Table 2 of the paper A Setwise Approach for Effective and Highly Efficient Zero-shot
+Ranking with Large Language Models.
 """
 
 import os

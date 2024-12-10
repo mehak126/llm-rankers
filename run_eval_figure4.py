@@ -7,8 +7,7 @@ log_file = "./output_files/figure4/eval_output.log"
 
 model_names = ["google/flan-t5-large"]
 dataset_names = ["dl19", "dl20"]
-# ranking_method_names = ['listwise', 'pairwise', 'setwise']
-ranking_method_names = ["pairwise", "listwise"]
+ranking_method_names = ["listwise", "pairwise", "setwise"]
 sorting_method_names = {
     "pairwise": ["heapsort", "bubblesort"],
     "setwise": ["heapsort", "bubblesort"],
@@ -58,4 +57,3 @@ with open(log_file, "w") as log:
                             print(
                                 f"Command failed with return code {process.returncode}"
                             )
-print("FIN.")
