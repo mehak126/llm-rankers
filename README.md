@@ -29,6 +29,35 @@ To obtain the NDCG@10 scores, run the script `run_eval_table2.py`.
 
 ### Evaluation on NovelEval
 
+Please follow the following steps to run the experiments on NovelEval:
+1. Clone the [repository](https://github.com/sunnweiwei/RankGPT) for the paper [Is ChatGPT Good at Search? Investigating Large Language Models as Re-Ranking Agents](https://arxiv.org/abs/2304.09542).
+2. Copy the .py files in the folder [NovelEval_scripts](NovelEval_scripts) to the folder `NovelEval` in the cloned repository.
+3. Run the command
+```bash
+python 1_pyserini_format.py
+```
+to convert the NovelEval dataset in the format required to index it with pyserini.
+4. Run the command
+```bash
+python 2_pyserini_index.py
+```
+to index the dataset. We provide the expected output in the file `2_pyserini_index_output.py`.
+5. Run the command
+```bash
+python 3_bm25_search.py
+```
+to obtain the initial BM25 ranking output on NovelEval using the same configuration as the Setwise paper. We provide the expected output file in [output_files/noveleval/run.noveleval.bm25.txt](output_files/noveleval/run.noveleval.bm25.txt)
+To evaluate this ranking, run:
+```bash
+python 4_bm25_eval.py
+```
+6. Convert the NovelEval queries to a compatible format by running:
+```bash
+python 5_bm25_eval.py
+```
+7. Copy the generated index `NovelEval-index`, queries `NovelEval-test`, BM25 ranking `lrun.noveleval.bm25.txt` and the remaining NovelEval data files to the root directory of this project.
+8. Run the script `run_noveleval_experiments.py` to obtain the output files in the directory [output_files/noveleval/](output_files/noveleval/). To evaluate, run the script `run_eval_noveleval.py`
+
 
 ### Efficiency and Effectiveness Tradeoffs
 

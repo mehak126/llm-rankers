@@ -1,0 +1,39 @@
+WARNING: sun.reflect.Reflection.getCallerClass is not supported. This will impact performance.
+2024-12-01 17:45:50,026 INFO  [main] index.IndexCollection (IndexCollection.java:380) - Setting log level to INFO
+2024-12-01 17:45:50,028 INFO  [main] index.IndexCollection (IndexCollection.java:383) - Starting indexer...
+2024-12-01 17:45:50,028 INFO  [main] index.IndexCollection (IndexCollection.java:384) - ============ Loading Parameters ============
+2024-12-01 17:45:50,028 INFO  [main] index.IndexCollection (IndexCollection.java:385) - DocumentCollection path: corpus_formatted
+2024-12-01 17:45:50,028 INFO  [main] index.IndexCollection (IndexCollection.java:386) - CollectionClass: JsonCollection
+2024-12-01 17:45:50,028 INFO  [main] index.IndexCollection (IndexCollection.java:387) - Generator: DefaultLuceneDocumentGenerator
+2024-12-01 17:45:50,029 INFO  [main] index.IndexCollection (IndexCollection.java:388) - Threads: 4
+2024-12-01 17:45:50,029 INFO  [main] index.IndexCollection (IndexCollection.java:389) - Language: en
+2024-12-01 17:45:50,029 INFO  [main] index.IndexCollection (IndexCollection.java:390) - Stemmer: porter
+2024-12-01 17:45:50,029 INFO  [main] index.IndexCollection (IndexCollection.java:391) - Keep stopwords? false
+2024-12-01 17:45:50,029 INFO  [main] index.IndexCollection (IndexCollection.java:392) - Stopwords: null
+2024-12-01 17:45:50,030 INFO  [main] index.IndexCollection (IndexCollection.java:393) - Store positions? true
+2024-12-01 17:45:50,030 INFO  [main] index.IndexCollection (IndexCollection.java:394) - Store docvectors? true
+2024-12-01 17:45:50,030 INFO  [main] index.IndexCollection (IndexCollection.java:395) - Store document "contents" field? false
+2024-12-01 17:45:50,030 INFO  [main] index.IndexCollection (IndexCollection.java:396) - Store document "raw" field? true
+2024-12-01 17:45:50,030 INFO  [main] index.IndexCollection (IndexCollection.java:397) - Additional fields to index: []
+2024-12-01 17:45:50,031 INFO  [main] index.IndexCollection (IndexCollection.java:398) - Optimize (merge segments)? false
+2024-12-01 17:45:50,031 INFO  [main] index.IndexCollection (IndexCollection.java:399) - Whitelist: null
+2024-12-01 17:45:50,031 INFO  [main] index.IndexCollection (IndexCollection.java:400) - Pretokenized?: false
+2024-12-01 17:45:50,031 INFO  [main] index.IndexCollection (IndexCollection.java:401) - Index path: indexes/NovelEval-index
+2024-12-01 17:45:50,033 INFO  [main] index.IndexCollection (IndexCollection.java:481) - ============ Indexing Collection ============
+2024-12-01 17:45:50,039 INFO  [main] index.IndexCollection (IndexCollection.java:468) - Using DefaultEnglishAnalyzer
+2024-12-01 17:45:50,040 INFO  [main] index.IndexCollection (IndexCollection.java:469) - Stemmer: porter
+2024-12-01 17:45:50,040 INFO  [main] index.IndexCollection (IndexCollection.java:470) - Keep stopwords? false
+2024-12-01 17:45:50,040 INFO  [main] index.IndexCollection (IndexCollection.java:471) - Stopwords file: null
+2024-12-01 17:45:50,118 INFO  [main] index.IndexCollection (IndexCollection.java:510) - Thread pool with 4 threads initialized.
+2024-12-01 17:45:50,118 INFO  [main] index.IndexCollection (IndexCollection.java:512) - Initializing collection in corpus_formatted
+2024-12-01 17:45:50,119 INFO  [main] index.IndexCollection (IndexCollection.java:521) - 1 file found
+2024-12-01 17:45:50,119 INFO  [main] index.IndexCollection (IndexCollection.java:522) - Starting to index...
+2024-12-01 17:45:50,430 DEBUG [pool-2-thread-1] index.IndexCollection$LocalIndexerThread (IndexCollection.java:345) - corpus_formatted/corpus_formatted.jsonl: 420 docs added.
+2024-12-01 17:45:50,556 INFO  [main] index.IndexCollection (IndexCollection.java:578) - Indexing Complete! 420 documents indexed
+2024-12-01 17:45:50,557 INFO  [main] index.IndexCollection (IndexCollection.java:579) - ============ Final Counter Values ============
+2024-12-01 17:45:50,557 INFO  [main] index.IndexCollection (IndexCollection.java:580) - indexed:              420
+2024-12-01 17:45:50,557 INFO  [main] index.IndexCollection (IndexCollection.java:581) - unindexable:            0
+2024-12-01 17:45:50,557 INFO  [main] index.IndexCollection (IndexCollection.java:582) - empty:                  0
+2024-12-01 17:45:50,557 INFO  [main] index.IndexCollection (IndexCollection.java:583) - skipped:                0
+2024-12-01 17:45:50,557 INFO  [main] index.IndexCollection (IndexCollection.java:584) - errors:                 0
+2024-12-01 17:45:50,561 INFO  [main] index.IndexCollection (IndexCollection.java:587) - Total 420 documents indexed in 00:00:00

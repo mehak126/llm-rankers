@@ -6,11 +6,9 @@ log_file = "./output_files/noveleval/eval_output_allpair.log"
 
 
 model_names = ["google/flan-t5-large", "google/flan-t5-xl", "google/flan-t5-xxl"]
-# ranking_method_names = ["listwise", "pairwise", "setwise", "pointwise"]
-ranking_method_names = ["pairwise"]
+ranking_method_names = ["listwise", "pairwise", "setwise", "pointwise"]
 sorting_method_names = {
-    # 'pairwise': ['heapsort', 'bubblesort', 'allpair'],
-    "pairwise": ["allpair"],
+    "pairwise": ["heapsort", "bubblesort", "allpair"],
     "setwise": ["heapsort", "bubblesort"],
     "pointwise": ["yes_no", "qlm"],
     "listwise": ["likelihood", "generation"],
@@ -48,5 +46,3 @@ with open(log_file, "w") as log:
                 log.write("=" * 50 + "\n")
                 if process.returncode != 0:
                     print(f"Command failed with return code {process.returncode}")
-
-print("FIN.")
