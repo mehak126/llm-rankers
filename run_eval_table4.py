@@ -6,15 +6,14 @@ log_file = "./output_files/table4/eval_output_vicuna.log"
 
 
 model_names = [
-    # "meta-llama/Llama-3.1-8B",
-    # "meta-llama/Llama-3.1-8B-Instruct",
+    "meta-llama/Llama-3.1-8B",
+    "meta-llama/Llama-3.1-8B-Instruct",
     "lmsys/vicuna-13b-v1.5",
-    # "meta-llama/Llama-2-13b-hf",
-    # "lmsys/vicuna-7b-v1.5",
-    # "meta-llama/Llama-2-7b-hf",
+    "meta-llama/Llama-2-13b-hf",
+    "lmsys/vicuna-7b-v1.5",
+    "meta-llama/Llama-2-7b-hf",
 ]
-dataset_names = ["dl19"]  # , "dl20"]
-# ranking_method_names = ['pairwise', 'setwise', 'pointwise', 'listwise']
+dataset_names = ["dl19", "dl20"]
 ranking_method_names = ["setwise", "pairwise", "listwise"]
 sorting_method_names = {
     "pairwise": ["heapsort", "bubblesort"],
@@ -41,20 +40,11 @@ with open(log_file, "w") as log:
                     command = f"python -m pyserini.eval.trec_eval -c -l 2 -m ndcg_cut.10 {dataset_name}-passage {fpath}"
                     print(f"Running command: {command}..")
 
-                    # process = subprocess.run(command, shell=True, stderr=subprocess.STDOUT)
                     process = subprocess.run(
                         command, shell=True, capture_output=True, text=True
                     )
-
-                    # log.write(f"RANKING METHOD: {ranking_method}\n")
-                    # log.write(f"SORTING METHOD: {sorting_method}\n")
-                    # log.write(f"COMMAND: {command}\n")
-                    # log.write(f"RETURN CODE: {process.returncode}\n")
                     output = process.stdout
                     # log.write(f"{output.split(' ')[-1]}")
                     log.write(f"{output}")
-                    # log.write(f"STDERR:\n{process.stderr}\n")
-                    # log.write("=" * 50 + "\n")
                     if process.returncode != 0:
                         print(f"Command failed with return code {process.returncode}")
-print("FIN.")
