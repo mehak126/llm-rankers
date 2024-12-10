@@ -2,16 +2,16 @@ import os
 import subprocess
 
 root = "./output_files/table4"
-log_file = "./output_files/table4/eval_output.log"
+log_file = "./output_files/table4/eval_output_vicuna.log"
 
 
 model_names = [
-    "meta-llama/Llama-3.1-8B",
-    "meta-llama/Llama-3.1-8B-Instruct",
+    # "meta-llama/Llama-3.1-8B",
+    # "meta-llama/Llama-3.1-8B-Instruct",
     "lmsys/vicuna-13b-v1.5",
-    "meta-llama/Llama-2-13b-hf",
-    "lmsys/vicuna-7b-v1.5",
-    "meta-llama/Llama-2-7b-hf",
+    # "meta-llama/Llama-2-13b-hf",
+    # "lmsys/vicuna-7b-v1.5",
+    # "meta-llama/Llama-2-7b-hf",
 ]
 dataset_names = ["dl19"]  # , "dl20"]
 # ranking_method_names = ['pairwise', 'setwise', 'pointwise', 'listwise']
@@ -35,10 +35,7 @@ with open(log_file, "w") as log:
                 print(f"RANKING METHOD: {ranking_method}")
                 for sorting_method in sorting_method_names[ranking_method]:
                     print(f"SORTING METHOD: {sorting_method}")
-                    if dataset_name == "dl20":
-                        fname = f"run.{model_savename}.{ranking_method}.{sorting_method}.{dataset_name}.txt"
-                    else:
-                        fname = f"run.{model_savename}.{ranking_method}.{sorting_method}.txt"
+                    fname = f"run.{model_savename}.{ranking_method}.{sorting_method}.{dataset_name}.txt"
                     fpath = os.path.join(root, fname)
 
                     command = f"python -m pyserini.eval.trec_eval -c -l 2 -m ndcg_cut.10 {dataset_name}-passage {fpath}"
@@ -53,9 +50,11 @@ with open(log_file, "w") as log:
                     # log.write(f"SORTING METHOD: {sorting_method}\n")
                     # log.write(f"COMMAND: {command}\n")
                     # log.write(f"RETURN CODE: {process.returncode}\n")
-                    log.write(f"STDOUT:\n{process.stdout}\n")
+                    output = process.stdout
+                    # log.write(f"{output.split(' ')[-1]}")
+                    log.write(f"{output}")
                     # log.write(f"STDERR:\n{process.stderr}\n")
-                    log.write("=" * 50 + "\n")
+                    # log.write("=" * 50 + "\n")
                     if process.returncode != 0:
                         print(f"Command failed with return code {process.returncode}")
 print("FIN.")

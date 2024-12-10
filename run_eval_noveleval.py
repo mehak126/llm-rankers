@@ -42,10 +42,11 @@ with open(log_file, "w") as log:
                 log.write(f"RANKING METHOD: {ranking_method}\n")
                 log.write(f"SORTING METHOD: {sorting_method}\n")
                 log.write(f"COMMAND: {command}\n")
-                # log.write(f"RETURN CODE: {process.returncode}\n")
+                log.write(f"RETURN CODE: {process.returncode}\n")
                 log.write(f"STDOUT:\n{process.stdout}\n")
-                # log.write(f"STDERR:\n{process.stderr}\n")
+                log.write(f"STDERR:\n{process.stderr}\n")
                 log.write("=" * 50 + "\n")
                 if process.returncode != 0:
                     print(f"Command failed with return code {process.returncode}")
+
 print("FIN.")
