@@ -1,0 +1,37 @@
+Models,Methods,2019-NDCG@10,2019-Latency(s),2020-NDCG@10,2020-Latency(s)
+Llama 3.1-8B,setwise.heapsort,0.2202,1.985873965,0.2021,2.034109111
+Llama 3.1-8B,setwise.bubblesort,0.5058,1.840577148,0.4796,1.871740721
+Llama 3.1-8B,pairwise.heapsort,0.2202,5.97935849,0.2021,6.118690611
+Llama 3.1-8B,pairwise.bubblesort,0.5058,5.091605602,0.4796,5.220044937
+Llama 3.1-8B,listwise.generation,0.5095,216.8152104,0.4838,221.5807429
+Llama 3.1-8B,listwise.likelihood,0.5173,11.0404101,0.4848,11.27918209
+Llama 3.1-8B-Instruct,setwise.heapsort,0.6799,3.58761524,0.5994,3.644691757
+Llama 3.1-8B-Instruct,setwise.bubblesort,0.6717,14.29053676,0.6310,14.48207565
+Llama 3.1-8B-Instruct,pairwise.heapsort,0.6663,12.27440766,0.6147,12.28233129
+Llama 3.1-8B-Instruct,pairwise.bubblesort,0.6564,42.79137492,0.6126,44.21700158
+Llama 3.1-8B-Instruct,listwise.generation,0.6711,109.8254737,0.6625,109.954779
+Llama 3.1-8B-Instruct,listwise.likelihood,0.6185,10.97585311,0.6012,11.20866378
+Vicuna 13B,setwise.heapsort,0.6566,21.5750536,0.5892,20.96687833
+Vicuna 13B,setwise.bubblesort,0.6280,74.47768565,0.5884,74.3676555
+Vicuna 13B,pairwise.heapsort,0.6168,75.66276204,0.5855,59.52847019
+Vicuna 13B,pairwise.bubblesort,0.6125,84.90867501,0.5911,85.59849535
+Vicuna 13B,listwise.generation,0.6492,403.4660265,0.6062,399.2419812
+Vicuna 13B,listwise.likelihood,0.6275,18.94191805,0.5983,65.28607374
+Llama 2 13B,setwise.heapsort,0.2237,3.713006663,0.2033,3.782729776
+Llama 2 13B,setwise.bubblesort,0.5059,3.763139226,0.4791,4.151043813
+Llama 2 13B,pairwise.heapsort,0.2202,12.08355927,0.2021,12.18969091
+Llama 2 13B,pairwise.bubblesort,0.5058,10.20368237,0.4796,10.34352472
+Llama 2 13B,listwise.generation,0.4927,389.5640064,0.4656,403.4514062
+Llama 2 13B,listwise.likelihood,0.3548,18.89200407,0.3397,19.09512976
+Vicuna 7B,setwise.heapsort,0.3938,2.529284522,0.3459,2.544069301
+Vicuna 7B,setwise.bubblesort,0.5318,4.759881308,0.4915,5.396840469
+Vicuna 7B,pairwise.heapsort,0.2202,6.668200022,0.2035,6.750695063
+Vicuna 7B,pairwise.bubblesort,0.5058,5.827208253,0.4796,5.796476187
+Vicuna 7B,listwise.generation,0.5058,94.6254176,0.4825,96.71514199
+Vicuna 7B,listwise.likelihood,0.5718,11.36104608,0.5302,11.4701278
+Llama 2 7B,setwise.heapsort,0.2202,2.12669408,0.2021,2.166140984
+Llama 2 7B,setwise.bubblesort,0.5058,1.947632302,0.4796,1.957468039
+Llama 2 7B,pairwise.heapsort,0.2202,6.689466366,0.2021,6.749465274
+Llama 2 7B,pairwise.bubblesort,0.5058,5.681687316,0.4796,5.725928489
+Llama 2 7B,listwise.generation,0.4986,301.8417376,0.4834,297.0866116
+Llama 2 7B,listwise.likelihood,0.4893,11.01091578,0.4713,11.12381348
