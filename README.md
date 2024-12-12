@@ -24,9 +24,6 @@ Next, run the script `run_table2.py` to generate the output logs and ranking ord
 
 To obtain the NDCG@10 scores, run the script `run_eval_table2.py`.
 
-### Evaluation on BEIR
-
-
 ### Evaluation on NovelEval
 
 Please follow the following steps to run the experiments on NovelEval:
@@ -91,3 +88,8 @@ To obtain the NDCG@10 scores, run the script `run_eval_table4.py`.
 
 
 ### Plotting figures
+The code to plot all figures is included in the file `make_plots.ipynb`. The plotting code takes the csv for the compiled results for the experiments as inputs, which are provided in the corresponding output directories. The respective files are:
+1. [output_files/figure3a/3a_results.csv](output_files/figure3a/3a_results.csv)
+2. [output_files/figure3b/3b_results.csv](output_files/figure3b/3b_results.csv)
+3. [output_files/figure4/figure4_results.csv](output_files/figure4/figure4_results.csv)
+4. [output_files/table4/table4.csv](output_files/table4/table4.csv)
