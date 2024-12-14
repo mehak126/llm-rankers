@@ -1,269 +1,0 @@
-Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:01<00:01,  1.92s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:02<00:00,  1.20s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:02<00:00,  1.31s/it]
-0it [00:00, ?it/s]2030it [00:00, 20235.13it/s]4546it [00:00, 23128.02it/s]7097it [00:00, 24184.20it/s]10067it [00:00, 26352.70it/s]13049it [00:00, 27591.52it/s]16038it [00:00, 28355.26it/s]19033it [00:00, 28852.19it/s]21919it [00:00, 28729.64it/s]24793it [00:00, 27946.43it/s]27592it [00:01, 27776.64it/s]30373it [00:01, 26687.28it/s]33086it [00:01, 26802.47it/s]36076it [00:01, 27698.21it/s]39053it [00:01, 28286.78it/s]42023it [00:01, 28704.69it/s]43000it [00:01, 27647.77it/s]
-  0%|          | 0/43 [00:00<?, ?it/s]Asking to truncate to max_length but no maximum length is provided and the model has no predefined maximum length. Default to no truncation.
-/home/mdhaliwal/miniconda3/envs/test-llmrankers/lib/python3.9/site-packages/transformers/generation/configuration_utils.py:590: UserWarning: `do_sample` is set to `False`. However, `temperature` is set to `0.0` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `temperature`.
-  warnings.warn(
-  2%|▏         | 1/43 [00:02<01:41,  2.41s/it]  5%|▍         | 2/43 [00:04<01:28,  2.16s/it]  7%|▋         | 3/43 [00:06<01:22,  2.06s/it]  9%|▉         | 4/43 [00:08<01:18,  2.02s/it] 12%|█▏        | 5/43 [00:10<01:16,  2.02s/it] 14%|█▍        | 6/43 [00:12<01:12,  1.95s/it] 16%|█▋        | 7/43 [00:14<01:09,  1.94s/it] 19%|█▊        | 8/43 [00:15<01:07,  1.92s/it] 21%|██        | 9/43 [00:18<01:06,  1.97s/it] 23%|██▎       | 10/43 [00:19<01:04,  1.94s/it] 26%|██▌       | 11/43 [00:21<01:03,  1.97s/it] 28%|██▊       | 12/43 [00:23<01:00,  1.94s/it] 30%|███       | 13/43 [00:25<00:58,  1.95s/it] 33%|███▎      | 14/43 [00:27<00:56,  1.96s/it] 35%|███▍      | 15/43 [00:29<00:54,  1.94s/it] 37%|███▋      | 16/43 [00:31<00:52,  1.95s/it] 40%|███▉      | 17/43 [00:33<00:50,  1.93s/it] 42%|████▏     | 18/43 [00:35<00:47,  1.91s/it] 44%|████▍     | 19/43 [00:37<00:44,  1.87s/it] 47%|████▋     | 20/43 [00:39<00:44,  1.92s/it] 49%|████▉     | 21/43 [00:41<00:42,  1.92s/it] 51%|█████     | 22/43 [00:43<00:41,  1.96s/it] 53%|█████▎    | 23/43 [00:44<00:38,  1.93s/it] 56%|█████▌    | 24/43 [00:46<00:36,  1.93s/it] 58%|█████▊    | 25/43 [00:48<00:35,  1.95s/it] 60%|██████    | 26/43 [00:50<00:33,  1.94s/it] 63%|██████▎   | 27/43 [00:52<00:30,  1.91s/it] 65%|██████▌   | 28/43 [00:54<00:28,  1.91s/it] 67%|██████▋   | 29/43 [00:56<00:26,  1.92s/it] 70%|██████▉   | 30/43 [00:58<00:25,  1.95s/it] 72%|███████▏  | 31/43 [01:00<00:23,  1.97s/it] 74%|███████▍  | 32/43 [01:02<00:21,  1.96s/it] 77%|███████▋  | 33/43 [01:04<00:19,  1.95s/it] 79%|███████▉  | 34/43 [01:06<00:17,  1.95s/it] 81%|████████▏ | 35/43 [01:08<00:15,  1.95s/it] 84%|████████▎ | 36/43 [01:10<00:13,  1.92s/it] 86%|████████▌ | 37/43 [01:11<00:11,  1.90s/it] 88%|████████▊ | 38/43 [01:13<00:09,  1.91s/it] 91%|█████████ | 39/43 [01:15<00:07,  1.91s/it] 93%|█████████▎| 40/43 [01:17<00:05,  1.94s/it] 95%|█████████▌| 41/43 [01:19<00:03,  1.93s/it] 98%|█████████▊| 42/43 [01:21<00:01,  1.95s/it]100%|██████████| 43/43 [01:23<00:00,  1.96s/it]100%|██████████| 43/43 [01:23<00:00,  1.95s/it]
-Unexpected output: 
-Unexpected output: 
-Unexpected output: 
-Unexpected output: 
-Unexpected output: 
-Unexpected output: 
-Unexpected output: 
-Unexpected output: 
-Unexpected output: 
-Unexpected output: 
-Unexpected output: 
-Unexpected output: 
-Unexpected output: 
-Unexpected output: 
-Unexpected output: 
-Unexpected output: 
-Unexpected output: 
-Unexpected output: 
-Unexpected output: 
-Unexpected output: 
-Unexpected output: 
-Unexpected output: 
-Unexpected output: 
-Unexpected output: 
-Unexpected output: 
-Unexpected output: 
-Unexpected output: 
-Unexpected output: 
-Unexpected output: 
-Unexpected output: 
-Unexpected output: 
-Unexpected output: 
-Unexpected output: 
-Unexpected output: 
-Unexpected output: 
-Unexpected output: 
-Unexpected output: 
-Unexpected output: 
-Unexpected output: 
-Unexpected output: 
-Unexpected output: 
-Unexpected output: 
-Unexpected output: 
-Unexpected output: 
-Unexpected output: 
-Unexpected output: 
-Unexpected output: 
-Unexpected output: 
-Unexpected output: 
-Unexpected output: 
-Unexpected output: 
-Unexpected output: 
-Unexpected output: 
-Unexpected output: 
-Unexpected output: 
-Unexpected output: 
-Unexpected output: 
-Unexpected output: 
-Unexpected output: 
-Unexpected output: 
-Unexpected output: 
-Unexpected output: 
-Unexpected output: 
-Unexpected output: 
-Unexpected output: 
-Unexpected output: 
-Unexpected output: 
-Unexpected output: 
-Unexpected output: 
-Unexpected output: 
-Unexpected output: 
-Unexpected output: 
-Unexpected output: 
-Unexpected output: 
-Unexpected output: 
-Unexpected output: 
-Unexpected output: 
-Unexpected output: 
-Unexpected output: 
-Unexpected output: 
-Unexpected output: 
-Unexpected output: 
-Unexpected output: 
-Unexpected output: 
-Unexpected output: 
-Unexpected output: 
-Unexpected output: 
-Unexpected output: 
-Unexpected output: 
-Unexpected output: 
-Unexpected output: 
-Unexpected output: 
-Unexpected output: 
-Unexpected output: 
-Unexpected output: 
-Unexpected output: 
-Unexpected output: 
-Unexpected output: 
-Unexpected output: 
-Unexpected output: 
-Unexpected output: 
-Unexpected output: 
-Unexpected output: "
-Unexpected output: 
-Unexpected output: 
-Unexpected output: 
-Unexpected output: 
-Unexpected output: 
-Unexpected output: 
-Unexpected output: 
-Unexpected output: 
-Unexpected output: 
-Unexpected output: 
-Unexpected output: 
-Unexpected output: 
-Unexpected output: 
-Unexpected output: 
-Unexpected output: 
-Unexpected output: 
-Unexpected output: 
-Unexpected output: 
-Unexpected output: 
-Unexpected output: 
-Unexpected output: 
-Unexpected output: 
-Unexpected output: 
-Unexpected output: 
-Unexpected output: 
-Unexpected output: 
-Unexpected output: 
-Unexpected output: 
-Unexpected output: 
-Unexpected output: 
-Unexpected output: 
-Unexpected output: 
-Unexpected output: 
-Unexpected output: 
-Unexpected output: 
-Unexpected output: 
-Unexpected output: 
-Unexpected output: 
-Unexpected output: 
-Unexpected output: 
-Unexpected output: 
-Unexpected output: 
-Unexpected output: 
-Unexpected output: 
-Unexpected output: 
-Unexpected output: 
-Unexpected output: 
-Unexpected output: 
-Unexpected output: 
-Unexpected output: 
-Unexpected output: 
-Unexpected output: 
-Unexpected output: 
-Unexpected output: 
-Unexpected output: 
-Unexpected output: 
-Unexpected output: 
-Unexpected output: 
-Unexpected output: 
-Unexpected output: 
-Unexpected output: 
-Unexpected output: 
-Unexpected output: 
-Unexpected output: 
-Unexpected output: 
-Unexpected output: 
-Unexpected output: 
-Unexpected output: 
-Unexpected output: 
-Unexpected output: 
-Unexpected output: 
-Unexpected output: 
-Unexpected output: 
-Unexpected output: 
-Unexpected output: 
-Unexpected output: 
-Unexpected output: 
-Unexpected output: 
-Unexpected output: 
-Unexpected output: 
-Unexpected output: 
-Unexpected output: 
-Unexpected output: 
-Unexpected output: 
-Unexpected output: 
-Unexpected output: 
-Unexpected output: 
-Unexpected output: 
-Unexpected output: 
-Unexpected output: 
-Unexpected output: 
-Unexpected output: 
-Unexpected output: 
-Unexpected output: 
-Unexpected output: 
-Unexpected output: 
-Unexpected output: 
-Unexpected output: 
-Unexpected output: 
-Unexpected output: 
-Unexpected output: 
-Unexpected output: 
-Unexpected output: 
-Unexpected output: 
-Unexpected output: 
-Unexpected output: 
-Unexpected output: 
-Unexpected output: 
-Unexpected output: 
-Unexpected output: 
-Unexpected output: 
-Unexpected output: 
-Unexpected output: 
-Unexpected output: 
-Unexpected output: 
-Unexpected output: 
-Unexpected output: 
-Unexpected output: 
-Unexpected output: 
-Unexpected output: 
-Unexpected output: 
-Unexpected output: 
-Unexpected output: 
-Unexpected output: 
-Unexpected output: 
-Unexpected output: 
-Unexpected output: 
-Unexpected output: 
-Unexpected output: 
-Unexpected output: 
-Unexpected output: 
-Unexpected output: 
-Unexpected output: 
-Unexpected output: 
-Unexpected output: 
-Unexpected output: 
-Unexpected output: 
-Unexpected output: 
-Unexpected output: 
-Unexpected output: 
-Unexpected output: 
-Unexpected output: 
-Unexpected output: 
-Unexpected output: 
-Unexpected output: 
-Unexpected output: 
-Unexpected output: 
-Unexpected output: 
-Unexpected output: 
-Unexpected output: 
-Unexpected output: 
-Unexpected output: 
-Unexpected output: 
-Unexpected output: 
-Unexpected output: 
-Unexpected output: 
-Avg comparisons: 42.0
-Avg prompt tokens: 17737.95348837209
-Avg completion tokens: 17779.95348837209
-Avg time per query: 1.947632301685422

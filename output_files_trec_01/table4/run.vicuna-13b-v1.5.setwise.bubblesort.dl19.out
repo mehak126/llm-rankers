@@ -1,40 +1,0 @@
-Loading checkpoint shards:   0%|          | 0/3 [00:00<?, ?it/s]Loading checkpoint shards:  33%|███▎      | 1/3 [00:02<00:05,  2.67s/it]Loading checkpoint shards:  67%|██████▋   | 2/3 [00:04<00:02,  2.37s/it]Loading checkpoint shards: 100%|██████████| 3/3 [00:06<00:00,  1.93s/it]Loading checkpoint shards: 100%|██████████| 3/3 [00:06<00:00,  2.08s/it]
-/home/mdhaliwal/miniconda3/envs/test-llmrankers/lib/python3.9/site-packages/transformers/generation/configuration_utils.py:590: UserWarning: `do_sample` is set to `False`. However, `temperature` is set to `0.9` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `temperature`. This was detected when initializing the generation config instance, which means the corresponding file may hold incorrect parameterization and should be fixed.
-  warnings.warn(
-/home/mdhaliwal/miniconda3/envs/test-llmrankers/lib/python3.9/site-packages/transformers/generation/configuration_utils.py:595: UserWarning: `do_sample` is set to `False`. However, `top_p` is set to `0.6` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_p`. This was detected when initializing the generation config instance, which means the corresponding file may hold incorrect parameterization and should be fixed.
-  warnings.warn(
-/home/mdhaliwal/miniconda3/envs/test-llmrankers/lib/python3.9/site-packages/transformers/generation/configuration_utils.py:590: UserWarning: `do_sample` is set to `False`. However, `temperature` is set to `0.9` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `temperature`.
-  warnings.warn(
-/home/mdhaliwal/miniconda3/envs/test-llmrankers/lib/python3.9/site-packages/transformers/generation/configuration_utils.py:595: UserWarning: `do_sample` is set to `False`. However, `top_p` is set to `0.6` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_p`.
-  warnings.warn(
-0it [00:00, ?it/s]2080it [00:00, 20783.92it/s]5065it [00:00, 26080.78it/s]8066it [00:00, 27837.78it/s]11067it [00:00, 28666.24it/s]14058it [00:00, 29094.72it/s]17062it [00:00, 29398.56it/s]20058it [00:00, 29552.01it/s]23048it [00:00, 29656.36it/s]26040it [00:00, 29733.42it/s]29039it [00:01, 29804.32it/s]32028it [00:01, 29801.22it/s]35022it [00:01, 29839.70it/s]38025it [00:01, 29889.99it/s]41015it [00:01, 29710.65it/s]43000it [00:01, 29288.67it/s]
-  0%|          | 0/43 [00:00<?, ?it/s]/home/mdhaliwal/miniconda3/envs/test-llmrankers/lib/python3.9/site-packages/transformers/generation/utils.py:1493: UserWarning: You have modified the pretrained model configuration to control generation. This is a deprecated strategy to control generation and will be removed in v5. Please use and modify the model generation configuration (see https://huggingface.co/docs/transformers/generation_strategies#default-text-generation-configuration )
-  warnings.warn(
-/home/mdhaliwal/miniconda3/envs/test-llmrankers/lib/python3.9/site-packages/transformers/generation/configuration_utils.py:590: UserWarning: `do_sample` is set to `False`. However, `temperature` is set to `0.0` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `temperature`.
-  warnings.warn(
-  2%|▏         | 1/43 [01:32<1:04:27, 92.08s/it]  5%|▍         | 2/43 [03:09<1:04:56, 95.03s/it]  7%|▋         | 3/43 [04:41<1:02:40, 94.01s/it]  9%|▉         | 4/43 [06:16<1:01:20, 94.37s/it] 12%|█▏        | 5/43 [07:07<49:46, 78.59s/it]   14%|█▍        | 6/43 [08:27<48:46, 79.09s/it] 16%|█▋        | 7/43 [10:01<50:22, 83.95s/it] 19%|█▊        | 8/43 [10:53<43:05, 73.88s/it] 21%|██        | 9/43 [12:36<46:53, 82.76s/it] 23%|██▎       | 10/43 [13:18<38:40, 70.33s/it] 26%|██▌       | 11/43 [14:41<39:33, 74.18s/it] 28%|██▊       | 12/43 [15:58<38:43, 74.96s/it] 30%|███       | 13/43 [17:25<39:23, 78.77s/it] 33%|███▎      | 14/43 [18:52<39:09, 81.01s/it] 35%|███▍      | 15/43 [19:21<30:34, 65.52s/it] 37%|███▋      | 16/43 [20:56<33:30, 74.47s/it] 40%|███▉      | 17/43 [21:26<26:26, 61.00s/it] 42%|████▏     | 18/43 [22:53<28:37, 68.69s/it] 44%|████▍     | 19/43 [24:13<28:49, 72.06s/it] 47%|████▋     | 20/43 [25:53<30:55, 80.69s/it] 49%|████▉     | 21/43 [27:05<28:35, 77.97s/it] 51%|█████     | 22/43 [28:44<29:31, 84.37s/it] 53%|█████▎    | 23/43 [30:11<28:23, 85.18s/it] 56%|█████▌    | 24/43 [31:31<26:26, 83.51s/it] 58%|█████▊    | 25/43 [32:28<22:38, 75.46s/it] 60%|██████    | 26/43 [33:39<21:02, 74.25s/it] 63%|██████▎   | 27/43 [35:02<20:27, 76.75s/it] 65%|██████▌   | 28/43 [36:14<18:53, 75.57s/it] 67%|██████▋   | 29/43 [37:44<18:35, 79.70s/it] 70%|██████▉   | 30/43 [39:16<18:06, 83.56s/it] 72%|███████▏  | 31/43 [39:47<13:33, 67.79s/it] 74%|███████▍  | 32/43 [40:42<11:41, 63.81s/it] 77%|███████▋  | 33/43 [42:00<11:21, 68.12s/it] 79%|███████▉  | 34/43 [42:53<09:33, 63.70s/it] 81%|████████▏ | 35/43 [44:17<09:17, 69.74s/it] 84%|████████▎ | 36/43 [45:44<08:44, 74.90s/it] 86%|████████▌ | 37/43 [47:11<07:50, 78.43s/it] 88%|████████▊ | 38/43 [48:40<06:47, 81.54s/it] 91%|█████████ | 39/43 [50:00<05:24, 81.23s/it] 93%|█████████▎| 40/43 [50:26<03:13, 64.57s/it] 95%|█████████▌| 41/43 [51:50<02:20, 70.36s/it] 98%|█████████▊| 42/43 [52:59<01:10, 70.15s/it]100%|██████████| 43/43 [53:22<00:00, 55.89s/it]100%|██████████| 43/43 [53:22<00:00, 74.48s/it]
-Unexpected output: 
-Unexpected output: 
-Unexpected output: 
-Unexpected output: 
-Unexpected output: 
-Unexpected output: 
-Unexpected output: 
-Unexpected output: 
-Unexpected output: 
-Unexpected output: 
-Unexpected output: 
-Unexpected output: 
-Unexpected output: 
-Unexpected output: 
-Unexpected output: 
-Unexpected output: 
-Unexpected output: 
-Unexpected output: 
-Unexpected output: 
-Unexpected output: 
-Unexpected output: 
-Avg comparisons: 255.5581395348837
-Avg prompt tokens: 120741.55813953489
-Avg completion tokens: 120997.11627906977
-Avg time per query: 74.47768565111382

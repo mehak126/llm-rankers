@@ -1,6 +1,0 @@
-Downloading https://search.maven.org/remotecontent?filepath=uk/ac/gla/dcs/terrierteam/jtreceval/0.0.5/jtreceval-0.0.5-jar-with-dependencies.jar to /home/lenny/.cache/pyserini/eval/jtreceval-0.0.5-jar-with-dependencies.jar...
-/home/lenny/.cache/pyserini/eval/jtreceval-0.0.5-jar-with-dependencies.jar already exists!
-Skipping download.
-Running command: ['java', '-jar', '/home/lenny/.cache/pyserini/eval/jtreceval-0.0.5-jar-with-dependencies.jar', '-c', '-l', '2', '-m', 'ndcg_cut.10', '/home/lenny/.cache/pyserini/topics-and-qrels/qrels.dl19-passage.txt', 'output_files_trec_01/table4/run.vicuna-13b-v1.5.listwise.likelihood.dl19.txt']
-Results:
-ndcg_cut_10           	all	0.6275
