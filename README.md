@@ -4,6 +4,16 @@
 This repository contains the scripts needed to reproduce the results from the paper [A Setwise Approach for Effective and Highly Efficient Zero-shot
 Ranking with Large Language Models](https://arxiv.org/pdf/2310.09497), published at SIGIR 2024. Additional experiments include (1) Evaluation on [NovelEval](https://arxiv.org/abs/2304.09542), a new ranking benchmark consisting of questions beyond the evaluated LLMs' knowledge cutoff date, and (2) Measuring the impact of instructional and conversational fine-tuning on zero-shot ranking.
 
+### IMPORTANT: [llmranking_0045clean.ipynb](llmranking_0045clean.ipynb)
+Python notebook with information on how to replicate the BEIR experiments, the Measured vs. Published, and Modified vs Original charts from the project report 
+
+## Requirements.txt 
+These are the requirements to run the notebook:
+
+```bash
+pip install -r requirements.txt
+```
+
 ### Evaluation on TREC DL 2019 and 2020
 First, run the pyserini command for generating BM25 run files on TREC DL 2019 and 2020 as follows:
 
