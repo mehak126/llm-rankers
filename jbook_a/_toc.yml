@@ -1,0 +1,21 @@
+# Table of contents
+format: jb-book
+# format: jb-article
+root: llmranking_0045clean
+# chapters:
+#   # - file: fnana0032c
+
+# # Article format
+# format: jb-article
+# root: intro
+# sections:
+#   - file: section1
+#   - file: section2
+
+
+# # Book format
+# format: jb-book
+# root: intro
+# chapters:
+#   - file: chapter1
+#   - file: chapter2

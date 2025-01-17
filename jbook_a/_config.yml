@@ -1,0 +1,86 @@
+# Book settings
+# Learn more at https://jupyterbook.org/customize/config.html
+
+title: Zero-Shot Document Ranking Using LLMs
+author: jlesner@ucsb.edu
+logo: logo.png
+
+# Force re-execution of notebooks on each build.
+# See https://jupyterbook.org/content/execute.html
+execute:
+  execute_notebooks: 'off'
+  # execute_notebooks: auto
+  # execute_notebooks: cache
+  # execute_notebooks: force
+  timeout: 360  # Increase to 60 seconds or higher as needed
+  # hide_code: true # Whether to "hide" (aka collapse) the code by default
+
+# launch_buttons:
+#   hide_code: true
+
+# Define the name of the latex output file for PDF builds
+latex:
+  latex_documents:
+    targetname: book.tex
+
+# Add a bibtex file so that we can create citations
+bibtex_bibfiles:
+  - references.bib
+
+# Information about where the book exists on the web
+repository:
+  url: https://github.com/executablebooks/jupyter-book  # Online location of your book
+  path_to_book: docs  # Optional path to your book, relative to the repository root
+  branch: master  # Which branch of the repository should be used when creating links (optional)
+
+# Add GitHub buttons to your book
+# See https://jupyterbook.org/customize/config.html#add-a-link-to-your-repository
+html:
+  theme:
+    name: "sphinx_book_theme"
+  use_issues_button: false
+  use_repository_button: false
+  extra_css:
+    - _static/custom.css
+
+# sphinx:
+#   config:
+#     toc_nb_expand: True # To keep the notebook TOC fully expanded in jupyter-book,
+#     toc_expanded: True # If you want to expand all TOCs (not just notebooks), use:
+
+# Add hide-input tag to collapse just the input cell
+# Add hide-output tag to collapse just the output
+# Add hide-cell tag to hide both input and output
+
+
+# sphinx:
+#   config:
+#     toc_nb_expand: True    # Expand notebook TOC
+#     nb_execution_mode: auto # Options: force, off, auto, cache
+#     nb_execution_timeout: 30 # Seconds before timeout
+#     nb_output_stderr: show  # Options: show, remove, warn
+#     nb_merge_streams: False # Combine stdout/stderr
+#     execution_allow_errors: False # Continue on cell errors
+#     nb_custom_formats:  # Custom notebook formats
+#       .py:
+#         - jupytext.reads
+#         - fmt: py:percent
+
+sphinx:
+  config:
+    latex_engine: pdflatex  
+    # latex_engine: xelatex  # or pdflatex
+    latex_elements:
+      papersize: letterpaper
+      pointsize: 10pt
+      preamble: ''
+      figure_align: 'htbp'
+    # latex_documents:
+    #   targetname: book.tex
+
+# latex:
+#   latex_documents:
+#     targetname: book.tex
+#     title: Your Book Title
+#     author: Your Name
+#     theme: manual

@@ -1,0 +1,81 @@
+# Book settings
+title: My sample book
+author: The Jupyter Book Community
+logo: logo.png
+
+# Force re-execution of notebooks on each build
+execute:
+  execute_notebooks: force
+  timeout: 360
+
+# Define the name of the latex output file for PDF builds
+latex:
+  latex_documents:
+    targetname: book.tex
+
+# Add a bibtex file so that we can create citations
+bibtex_bibfiles:
+  - references.bib
+
+# Repository information
+# repository:
+#   url: https://github.com/executablebooks/jupyter-book
+#   path_to_book: docs
+#   branch: master
+
+# HTML-specific settings
+html:
+  use_issues_button: false
+  use_repository_button: false
+  
+  theme: "pydata_sphinx_theme"
+  theme_options:
+    use_edit_page_button: false
+    icon_links: true
+    show_toc_level: 2
+
+  # theme: "sphinx_book_theme"
+  # theme_options:
+  #   toc_title: "Contents"
+  #   style: "alabaster"
+  #   show_navbar_depth: 2
+
+  # theme: "sphinx_rtd_theme"
+  # theme_options:
+  #   collapse_navigation: false
+  #   sticky_navigation: true
+  #   navigation_depth: 4
+
+  # Add full screen settings
+  comments:
+    hypothesis: false  # Disables Hypothesis web annotation integration
+    utterances: false # Can enable GitHub-based commenting
+    giscus: false    # Another GitHub-based commenting option
+  
+  # navbar_number_sections: false  # Disables automatic section numbering in navigation
+  # extra_navbar: ""              # Additional HTML content for navbar
+  # sidebar_primary_width: "20vw" # Controls width of the main TOC sidebar
+  # extra_footer: ""              # Additional HTML content for footer
+  # home_page_in_navbar: false    # Removes "Home" from the top navbar
+
+# html:
+#   favicon: "path/to/favicon.ico"  # Custom favicon
+#   google_analytics_id: ""         # GA tracking ID
+  
+#   Theme customization
+#   theme: "sphinx_book_theme"      # Can use alternative themes
+#   theme_options:                  # Theme-specific settings
+#     logo: path/to/logo
+#     repository_url: ""
+#     use_download_button: true
+#     use_fullscreen_button: true
+    
+#   Additional features
+#   use_edit_page_button: true      # Adds "Edit this page" button
+#   announcement: ""                # Adds announcement banner
+#   search_bar_text: "Search..."    # Customizes search placeholder
+#   baseurl: ""                     # Base URL for your site
+  
+#   Extra dependencies
+#   extra_css: []                   # Additional CSS files
+#   extra_javascript: []            # Additional JavaScript files

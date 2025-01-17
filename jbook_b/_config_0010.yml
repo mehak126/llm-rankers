@@ -1,0 +1,39 @@
+# Book settings
+title: My sample book
+author: The Jupyter Book Community
+logo: logo.png
+
+# Force re-execution of notebooks on each build
+execute:
+  execute_notebooks: force
+  timeout: 360
+
+# Define the name of the latex output file for PDF builds
+latex:
+  latex_documents:
+    targetname: book.tex
+
+# Add a bibtex file so that we can create citations
+bibtex_bibfiles:
+  - references.bib
+
+# Repository information
+repository:
+  url: https://github.com/executablebooks/jupyter-book
+  path_to_book: docs
+  branch: master
+
+# HTML-specific settings
+html:
+  use_issues_button: true
+  use_repository_button: true
+  
+  # Add full screen settings
+  comments:
+    hypothesis: false
+  
+  navbar_number_sections: false
+  extra_navbar: ""
+  sidebar_primary_width: "300px"  # Increase TOC width
+  extra_footer: ""
+  home_page_in_navbar: false
